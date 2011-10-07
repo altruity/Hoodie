@@ -5,13 +5,13 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 
-	<!-- Basic Page Needs
+  <!-- Basic Page Needs
   ================================================== -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Hoodie—The Comfy HTML/CSS Framework</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
   <!-- IE CSS3 Pseudo Elements
   ================================================== -->
@@ -19,11 +19,11 @@
     <script type="text/javascript" src="../selectivizr.js"></script>
   <![endif]-->
 
-	<!-- Mobile Specific Metas
+  <!-- Mobile Specific Metas
   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- CSS
+  <!-- CSS
   ================================================== -->
   <link href="../hoodie.css" rel="stylesheet">
 
@@ -38,14 +38,14 @@
     }
   </script>
 
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="../images/favicon.ico">
-	<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png">
+  <!-- Favicons
+  ================================================== -->
+  <link rel="shortcut icon" href="../images/favicon.ico">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png">
 
-	<!-- Documentation Specific Settings
+  <!-- Documentation Specific Settings
   ================================================== -->
   <link href="assets/css/docs.css" rel="stylesheet">
   <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
@@ -57,108 +57,1400 @@
 
 <!DOCTYPE html>
   <body>
-  	
-  	<!--Container-->
-  	<div class="container">
-  	
-  		
-  		
-  		<!--Header-->
-		<header class="sixteen columns">
-			<!--Nav-->
-	  		<nav>
-				<a href="#">One</a>
-	  			<a href="#">Two</a>
-	  			<a href="#">Three</a>
-	  			<a href="#">Four</a>
-	  			<a href="#">Five</a>
-	  		</nav>
-  			<hgroup>
-				<h1>Hoodie</h1>
-				<h4>The Comfy HTML/CSS Framework.</h4>
-			</hgroup>
-		</header>
-		
-		<!--Section-->
-		<section class="sixteen columns">
-			
-			<!--Article-->
-			<article class="twelve columns alpha">
-				<h2>This is your headline. Shiny, shiny headline.</h2>
-				<p>This is the main content/article, the perfect place for all the things you want to put on the page.</p>
-				<section id="grid">
-					<div class="example-grid">
-						<div class="one column alpha">One</div>
-						<div class="eleven columns omega">Eleven</div>
-						<div class="two columns alpha">Two</div>
-						<div class="ten columns omega">Ten</div>
-						<div class="three columns alpha">Three</div>
-						<div class="nine columns omega">Nine</div>
-						<div class="four columns alpha">Four</div>
-						<div class="eight columns omega">Eight</div>
-						<div class="five columns alpha">Five</div>
-						<div class="seven columns omega">Seven</div>
-						<div class="six columns alpha">Six</div>
-						<div class="six columns omega">Six</div>
-						<div class="seven columns alpha">Seven</div>
-						<div class="five columns omega">Five</div>
-						<div class="eight columns alpha">Eight</div>
-						<div class="four columns omega">Four</div>
-						<div class="nine columns alpha">Nine</div>
-						<div class="three columns omega">Three</div>
-						<div class="ten columns alpha">Ten</div>
-						<div class="two columns omega">Two</div>
-						<div class="eleven columns alpha">Eleven</div>
-						<div class="one column omega">One</div>
-					</div>
-				</section>
-			</article>
-			
-			<!--Aside-->
-			<aside class="three columns offset-by-one omega">
-				<h3>Sidebar</h3>
-				<p>This is the sidebar, the perfect place for all the things you're forced to put on the page.</p>
-			</aside>
-			
-		</section>
-		
-		<!--Section-->
-		<section class="sixteen columns">
-			
-			<div id="boostrap_ui">
-				<ul class="tabs">
-					<li class="active"><a href="#home">Home</a></li>
-					<li><a href="#profile">Profile</a></li>
-					<li><a href="#messages">Messages</a></li>
-					<li><a href="#settings">Settings</a></li>
-				</ul>
-					
-				<div class="pill-content">
-					<div class="active" id="home">...</div>
-					<div id="profile">...</div>
-					<div id="messages">...</div>
-					<div id="settings">...</div>
-				</div>
-			</div>
-			
-			<script>
-			  $(function () {
-			    $('.tabs').tabs()
-			  })
-			</script>
-			
-		</section>
-		
-		<!--Footer-->
-		<footer class="sixteen columns">
-			<h3>Footer</h3>
-			<p>This is the footer, where magical things are often overlooked.</p>
-		</footer>
-  	</div>
+    
+    <!--Container-->
+    <div class="container">
+      
+    <!--Header-->
+    <header class="sixteen columns">
+      <!--Nav-->
+        <nav>
+        <a href="#">One</a>
+          <a href="#">Two</a>
+          <a href="#">Three</a>
+          <a href="#">Four</a>
+          <a href="#">Five</a>
+        </nav>
+        <hgroup>
+        <h1>Hoodie</h1>
+        <h4>The Comfy HTML/CSS Framework.</h4>
+      </hgroup>
+    </header>
+    
+    <!--Section-->
+    <section id="gridsystem" class="sixteen columns"> 
+      <h1>Grid System <small>960px of Awesomesauce</small></h1>
+      
+      <!--Article-->
+      <article class="twelve columns alpha">
+        <h2>This is your headline. Shiny, shiny headline.</h2>
+        <p>This is the main content/article, the perfect place for all the things you want to put on the page.</p>
 
-	
+        <section id="grid">
+          <div class="example-grid">
+            <div class="one column alpha">One</div>
+            <div class="eleven columns omega">Eleven</div>
+            <div class="two columns alpha">Two</div>
+            <div class="ten columns omega">Ten</div>
+            <div class="three columns alpha">Three</div>
+            <div class="nine columns omega">Nine</div>
+            <div class="four columns alpha">Four</div>
+            <div class="eight columns omega">Eight</div>
+            <div class="five columns alpha">Five</div>
+            <div class="seven columns omega">Seven</div>
+            <div class="six columns alpha">Six</div>
+            <div class="six columns omega">Six</div>
+            <div class="seven columns alpha">Seven</div>
+            <div class="five columns omega">Five</div>
+            <div class="eight columns alpha">Eight</div>
+            <div class="four columns omega">Four</div>
+            <div class="nine columns alpha">Nine</div>
+            <div class="three columns omega">Three</div>
+            <div class="ten columns alpha">Ten</div>
+            <div class="two columns omega">Two</div>
+            <div class="eleven columns alpha">Eleven</div>
+            <div class="one column omega">One</div>
+          </div>
+        </section>
+      </article>
+      
+      <!--Aside-->
+      <aside class="three columns offset-by-one omega">
+        <h3>Sidebar</h3>
+        <p>This is the sidebar, the perfect place for all the things you're forced to put on the page.</p>
+      </aside>
+      
+    </section>
 
-	<!-- Load the rest of the javascript in a non-blocking fashion.
+    <!-- Typography
+    ================================================== -->
+    <section id="typography" class="sixteen columns">
+      <h1>Typography <small>Headings, paragraphs, lists, and other inline type elements</small></h1>
+    
+      <!-- Headings & Paragraph Copy -->
+      <div class="row">
+        <div class="three columns alpha">
+          <h2>Headings &amp; copy</h2>
+    
+          <p>A standard typographic hierarchy for structuring your webpages.</p>
+          <p>The entire typographic grid is based on two Less variables in our variables.less file: <code>@basefont</code> and <code>@baseline</code>. The first is the base font-size used throughout and the second is the base line-height.</p>
+          <p>We use those variables, and some math, to create the margins, paddings, and line-heights of all our type and more.</p>
+        </div>
+        <div class="three columns offset-by-one">
+    
+          <h1>h1. Heading 1</h1>
+          <h2>h2. Heading 2</h2>
+          <h3>h3. Heading 3</h3>
+          <h4>h4. Heading 4</h4>
+          <h5>h5. Heading 5</h5>
+          <h6>h6. Heading 6</h6>
+    
+        </div>
+        <div class="eight columns offset-by-one omega">
+          <h3>Example paragraph</h3>
+          <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <h1>Example heading <small>Has sub-heading&hellip;</small></h1>
+        </div>
+      </div>
+    
+      <!-- Misc Elements -->
+      <div class="row">
+        <div class="three columns alpha">
+          <h2>Misc. elements</h2>
+          <p>Using emphasis, addresses, &amp; abbreviations</p>
+          <p>
+    
+            <code>&lt;strong&gt;</code>
+            <code>&lt;em&gt;</code>
+            <code>&lt;address&gt;</code>
+            <code>&lt;abbr&gt;</code>
+          </p>
+        </div>
+        <div class="twelve columns offset-by-one omega">
+    
+          <h3>When to use</h3>
+          <p>Emphasis tags (<code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code>) should be used to indicate additional importance or emphasis of a word or phrase relative to its surrounding copy. Use <code>&lt;strong&gt;</code> for importance and <code>&lt;em&gt;</code> for <em>stress</em> emphasis.</p>
+    
+          <h3>Emphasis in a paragraph</h3>
+          <p><a href="#">Fusce dapibus</a>, <strong>tellus ac cursus commodo</strong>, <em>tortor mauris condimentum nibh</em>, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue.</p>
+          <p><strong>Note:</strong> It's still okay to use <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code> tags in HTML5 and they don't have to be styled bold and italic, respectively (although if there is a more semantic element, use it). <code>&lt;b&gt;</code> is meant to highlight words or phrases without conveying additional importance, while <code>&lt;i&gt;</code> is mostly for voice, technical terms, etc.</p>
+    
+          <h3>Addresses</h3>
+          <p>The <code>&lt;address&gt;</code> element is used for contact information for its nearest ancestor, or the entire body of work. Here are two examples of how it could be used:</p>
+    
+          <div class="row">
+            <div class="three columns">
+              <address>
+                <strong>Twitter, Inc.</strong><br />
+    
+                795 Folsom Ave, Suite 600<br />
+                San Francisco, CA 94107<br />
+                <abbr title="Phone">P:</abbr> (123) 456-7890
+              </address>
+            </div>
+            <div class="three columns">
+              <address>
+    
+                <strong>Full Name</strong><br />
+                <a mailto="">first.last@gmail.com</a>
+              </address>
+            </div>
+          </div>
+    
+          <p><strong>Note:</strong> Each line in an <code>&lt;address&gt;</code> must end with a line-break (<code>&lt;br /&gt;</code>) or be wrapped in a block-level tag (e.g., <code>&lt;p&gt;</code>) to properly structure the content.</p>
+    
+          <h3>Abbreviations</h3>
+          <p>For abbreviations and acronyms, use the <code>&lt;abbr&gt;</code> tag (<code>&lt;acronym&gt;</code> is deprecated in <abbr title="HyperText Markup Langugage 5">HTML5</abbr>). Put the shorthand form within the tag and set a title for the complete name.</p>
+        </div>
+      </div><!-- /row -->
+    
+      <!-- Blockquotes -->
+      <div class="row">
+        <div class="three columns alpha">
+          <h2>Blockquotes</h2>
+          <p>
+            <code>&lt;blockquote&gt;</code>
+            <code>&lt;p&gt;</code>
+    
+            <code>&lt;small&gt;</code>
+          </p>
+        </div>
+        <div class="twelve columns offset-by-one omega">
+          <h3>How to quote</h3>
+          <p>To include a blockquote, wrap <code>&lt;blockquote&gt;</code> around <code>&lt;p&gt;</code> and <code>&lt;small&gt;</code> tags. Use the <code>&lt;small&gt;</code> element to cite your source and you'll get an em dash <code>&amp;mdash;</code> before it.</p>
+    
+          <blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+            <small>Dr. Julius Hibbert</small>
+          </blockquote>
+    <pre class="prettyprint linenums">
+    &lt;blockquote&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.&lt;/p&gt;
+    
+      &lt;small&gt;Dr. Julius Hibbert&lt;/small&gt;
+    &lt;/blockquote&gt;
+    </pre>
+        </div>
+      </div><!-- /row -->
+    
+      <h2>Lists</h2>
+      <div class="row">
+    
+        <div class="three columns alpha">
+          <h4>Unordered <code>&lt;ul&gt;</code></h4>
+          <ul>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Consectetur adipiscing elit</li>
+            <li>Integer molestie lorem at massa</li>
+    
+            <li>Facilisis in pretium nisl aliquet</li>
+            <li>Nulla volutpat aliquam velit
+              <ul>
+                <li>Phasellus iaculis neque</li>
+                <li>Purus sodales ultricies</li>
+                <li>Vestibulum laoreet porttitor sem</li>
+                <li>Ac tristique libero volutpat at</li>
+    
+              </ul>
+            </li>
+            <li>Faucibus porta lacus fringilla vel</li>
+            <li>Aenean sit amet erat nunc</li>
+            <li>Eget porttitor lorem</li>
+          </ul>
+        </div>
+    
+        <div class="three columns offset-by-one">
+          <h4>Unstyled <code>&lt;ul.unstyled&gt;</code></h4>
+          <ul class="unstyled">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Consectetur adipiscing elit</li>
+            <li>Integer molestie lorem at massa</li>
+    
+            <li>Facilisis in pretium nisl aliquet</li>
+            <li>Nulla volutpat aliquam velit
+              <ul>
+                <li>Phasellus iaculis neque</li>
+                <li>Purus sodales ultricies</li>
+                <li>Vestibulum laoreet porttitor sem</li>
+                <li>Ac tristique libero volutpat at</li>
+    
+              </ul>
+            </li>
+            <li>Faucibus porta lacus fringilla vel</li>
+            <li>Aenean sit amet erat nunc</li>
+            <li>Eget porttitor lorem</li>
+          </ul>
+        </div>
+    
+        <div class="three columns offset-by-one">
+          <h4>Ordered <code>&lt;ol&gt;</code></h4>
+          <ol>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Consectetur adipiscing elit</li>
+            <li>Integer molestie lorem at massa</li>
+    
+            <li>Facilisis in pretium nisl aliquet</li>
+            <li>Nulla volutpat aliquam velit</li>
+            <li>Faucibus porta lacus fringilla vel</li>
+            <li>Aenean sit amet erat nunc</li>
+            <li>Eget porttitor lorem</li>
+          </ol>
+    
+        </div>
+        <div class="three columns offset-by-one omega">
+          <h4>Description <code>dl</code></h4>
+          <dl>
+            <dt>Description lists</dt>
+            <dd>A description list is perfect for defining terms.</dd>
+            <dt>Euismod</dt>
+    
+            <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+            <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+            <dt>Malesuada porta</dt>
+            <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+          </dl>
+        </div>
+      </div><!-- /row -->
+    
+    
+      <!-- Code -->
+      <div class="row">
+        <div class="three columns alpha">
+          <h2>Code</h2>
+          <p>
+            <code>&lt;code&gt;</code>
+            <code>&lt;pre&gt;</code>
+    
+          </p>
+          <p>Pimp your code in style with two simple tags. For even more awesomeness through javascript, drop in Google's code prettify library and you're set.</p>
+        </div>
+        <div class="twelve columns offset-by-one omega">
+          <h3>Presenting code</h3>
+          <p>Code, blocks of or just snippets inline, can be displayed with style just by wrapping in the right tag. For blocks of code spanning multiple lines, use the <code>&lt;pre&gt;</code> element. For inline code, use the <code>&lt;code&gt;</code> element.</p>
+    
+          <table class="zebra-striped">
+            <thead>
+              <tr>
+                <th style="width: 190px;">Element</th>
+                <th>Result</th>
+              </tr>
+            </thead>
+            <tbody>
+    
+              <tr>
+                <td><code>&lt;code&gt;</code></td>
+                <td>In a line of text like this, your wrapped code will look like this <code>&gt;html&lt;</code> element.</td>
+              </tr>
+              <tr>
+                <td><code>&lt;pre&gt;</code></td>
+    
+                <td>
+    <pre>&lt;div&gt;
+      &lt;h1&gt;Heading&lt;/h1&gt;
+      &lt;p&gt;Something right here...&lt;/p&gt;
+    &lt;/div&gt;</pre>
+                  <p><strong>Note:</strong> Be sure to keep code within <code>pre</code> tags as close to the left as possible; it will render all tabs.</p>
+    
+                </td>
+              </tr>
+              <tr>
+                <td><code>&lt;pre class="prettyprint"&gt;</code></td>
+                <td>
+                  <p>Using the google-code-prettify library, you're blocks of code get a slightly different visual style and automatic syntax highlighting.</p>
+    <pre class="prettyprint">&lt;div&gt;
+      &lt;h1&gt;Heading&lt;/h1&gt;
+    
+      &lt;p&gt;Something right here...&lt;/p&gt;
+    &lt;/div&gt;</pre>
+                  <p><a href="http://code.google.com/p/google-code-prettify/">Download google-code-prettify</a> and view the readme for <a href="http://google-code-prettify.googlecode.com/svn/trunk/README.html">how to use</a>.</p>
+                </td>
+              </tr>
+    
+            </tbody>
+          </table>
+        </div>
+      </div><!-- /row -->
+    
+      <!-- Labels -->
+      <div class="row">
+        <div class="three columns alpha">
+          <h2>Inline labels</h2>
+    
+          <p>
+            <code>&lt;span class="label"&gt;</code>
+          </p>
+          <p>Call attention to or flag any phrase in your body text.</p>
+        </div>
+        <div class="twelve columns offset-by-one omega">
+          <h3>Label anything</h3>
+    
+          <p>Ever needed one of those fancy <span class="label success">New!</span> or <span class="label important">Important</span> flags when writing code? Well, now you have them. Here's what's included by default:</p>
+          <table class="zebra-striped">
+            <thead>
+              <tr>
+                <th style="width: 50%;">Label</th>
+    
+                <th>Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <code>&lt;span class="label"&gt;Default&lt;/span&gt;</code>
+    
+                </td>
+                <td>
+                  <span class="label">Default</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>&lt;span class="label success"&gt;New&lt;/span&gt;</code>
+    
+                </td>
+                <td>
+                  <span class="label success">New</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>&lt;span class="label warning"&gt;Warning&lt;/span&gt;</code>
+    
+                </td>
+                <td>
+                  <span class="label warning">Warning</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>&lt;span class="label important"&gt;Important&lt;/span&gt;</code>
+    
+                </td>
+                <td>
+                  <span class="label important">Important</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>&lt;span class="label notice"&gt;Notice&lt;/span&gt;</code>
+    
+                </td>
+                <td>
+                  <span class="label notice">Notice</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    
+      </div><!-- /row -->
+    
+    </section>
+
+    
+    <!-- Tables
+    ================================================== -->
+    <section id="tables">
+      <div class="page-header">
+        <h1>Tables <small>For, you guessed it, tabular data</small></h1>
+    
+      </div>
+      <!-- Table structure -->
+      <div class="row">
+        <div class="span4">
+          <h2>Building tables</h2>
+          <p>
+            <code>&lt;table&gt;</code>
+            <code>&lt;thead&gt;</code>
+    
+            <code>&lt;tbody&gt;</code>
+            <code>&lt;tr&gt;</code>
+            <code>&lt;th&gt;</code>
+            <code>&lt;td&gt;</code>
+            <code>&lt;colspan&gt;</code>
+            <code>&lt;caption&gt;</code>
+    
+          </p>
+          <p>Tables are great&mdash;for a lot of things. Great tables, however, need a bit of markup love to be useful, scalable, and readable (at the code level). Here are a few tips to help.</p>
+          <p>Always wrap your column headers in a <code>&lt;thead&gt;</code> such that hierarchy is <code>&lt;thead&gt;</code> > <code>&lt;tr&gt;</code> > <code>&lt;th&gt;</code>.</p>
+    
+          <p>Similar to the column headers, all your table’s body content should be wrapped in a <code>&lt;tbody&gt;</code> so your hierarchy is <code>&lt;tbody&gt;</code> > <code>&lt;tr&gt;</code> > <code>&lt;td&gt;</code>.</p>
+        </div>
+        <div class="span12">
+    
+          <h3>Example: Default table styles</h3>
+          <p>All tables will be automatically styled with only the essential borders to ensure readability and maintain structure. No need to add extra classes or attributes.</p>
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+    
+                <th>Last Name</th>
+                <th>Language</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+    
+                <td>Some</td>
+                <td>One</td>
+                <td>English</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Joe</td>
+    
+                <td>Sixpack</td>
+                <td>English</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Stu</td>
+                <td>Dent</td>
+    
+                <td>Code</td>
+              </tr>
+            </tbody>
+          </table>
+    <pre class="prettyprint linenums">
+    &lt;table&gt;
+      ...
+    &lt;/table&gt;</pre>
+          <h3>Example: Zebra-striped</h3>
+    
+          <p>Get a little fancy with your tables by adding zebra-striping&mdash;just add the <code>.zebra-striped</code> class.</p>
+          <table class="zebra-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+    
+                <th>Last Name</th>
+                <th>Language</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+    
+                <td>Some</td>
+                <td>One</td>
+                <td>English</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Joe</td>
+    
+                <td>Sixpack</td>
+                <td>English</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Stu</td>
+                <td>Dent</td>
+    
+                <td>Code</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><strong>Note:</strong> Zebra-striping is a progressive enhancement not available for older browsers like IE8 and below.</p>
+    <pre class="prettyprint linenums">
+    &lt;table class="zebra-striped"&gt;
+    
+    ...
+    &lt;/table&gt;</pre>
+          <h3>Example: Zebra-striped w/ TableSorter.js</h3>
+          <p>Taking the previous example, we improve the usefulness of our tables by providing sorting functionality via <a href="http://jquery.com">jQuery</a> and the <a href="http://tablesorter.com/docs/">Tablesorter</a> plugin. <strong>Click any column’s header to change the sort.</strong></p>
+          <table class="zebra-striped" id="sortTableExample">
+    
+            <thead>
+              <tr>
+                <th>#</th>
+                <th class="yellow">First Name</th>
+                <th class="blue">Last Name</th>
+                <th class="green">Language</th>
+              </tr>
+    
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Your</td>
+                <td>One</td>
+                <td>English</td>
+    
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Joe</td>
+                <td>Sixpack</td>
+                <td>English</td>
+              </tr>
+    
+              <tr>
+                <td>3</td>
+                <td>Stu</td>
+                <td>Dent</td>
+                <td>Code</td>
+              </tr>
+            </tbody>
+    
+          </table>
+    <pre class="prettyprint linenums">
+    &lt;script src="js/jquery/jquery.tablesorter.min.js"&gt;&lt;/script&gt;
+    &lt;script &gt;
+      $(function() {
+        $("table#sortTableExample").tablesorter({ sortList: [[1,0]] });
+      });
+    &lt;/script&gt;
+    &lt;table class="zebra-striped"&gt;
+      ...
+    &lt;/table&gt;</pre>
+    
+        </div>
+      </div><!-- /row -->
+    </section>
+    
+    
+    
+    <!-- Forms
+    ================================================== -->
+    <section id="forms">
+      <div class="page-header">
+        <h1>Forms</h1>
+      </div>
+    
+      <div class="row">
+        <div class="span4">
+          <h2>Default styles</h2>
+          <p>All forms are given default styles to present them in a readable and scalable way. Styles are provided for text inputs, select lists, textareas, radio buttons and checkboxes, and buttons.</p>
+        </div>
+        <div class="span12">
+          <form>
+            <fieldset>
+    
+              <legend>Example form legend</legend>
+              <div class="clearfix">
+                <label for="xlInput">X-Large input</label>
+                <div class="input">
+                  <input class="xlarge" id="xlInput" name="xlInput" size="30" type="text" />
+                </div>
+              </div><!-- /clearfix -->
+              <div class="clearfix">
+    
+                <label for="normalSelect">Select</label>
+                <div class="input">
+                  <select name="normalSelect" id="normalSelect">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+    
+                    <option>5</option>
+                  </select>
+                </div>
+              </div><!-- /clearfix -->
+              <div class="clearfix">
+                <label for="mediumSelect">Select</label>
+                <div class="input">
+                  <select class="medium" name="mediumSelect" id="mediumSelect">
+    
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+    
+                </div>
+              </div><!-- /clearfix -->
+              <div class="clearfix">
+                <label for="multiSelect">Multiple select</label>
+                <div class="input">
+                  <select class="medium" multiple="multiple" name="multiSelect" id="multiSelect">
+                    <option>1</option>
+                    <option>2</option>
+    
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div><!-- /clearfix -->
+              <div class="clearfix">
+    
+                <label>Uneditable input</label>
+                <div class="input">
+                  <span class="uneditable-input">Some value here</span>
+                </div>
+              </div><!-- /clearfix -->
+              <div class="clearfix">
+                <label for="disabledInput">Disabled input</label>
+    
+                <div class="input">
+                  <input class="xlarge disabled" id="disabledInput" name="disabledInput" size="30" type="text" placeholder="Disabled input here… carry on." disabled />
+                </div>
+              </div><!-- /clearfix -->
+              <div class="clearfix">
+                <label for="disabledInput">Disabled textarea</label>
+                <div class="input">
+                  <textarea class="xxlarge" name="textarea" id="textarea" rows="3" disabled></textarea>
+    
+                </div>
+              </div><!-- /clearfix -->
+              <div class="clearfix error">
+                <label for="xlInput2">X-Large input</label>
+                <div class="input">
+                  <input class="xlarge error" id="xlInput2" name="xlInput2" size="30" type="text" />
+                  <span class="help-inline">Small snippet of help text</span>
+                </div>
+    
+              </div><!-- /clearfix -->
+            </fieldset>
+            <fieldset>
+              <legend>Example form legend</legend>
+              <div class="clearfix">
+                <label for="prependedInput">Prepended text</label>
+                <div class="input">
+                  <div class="input-prepend">
+    
+                    <span class="add-on">@</span>
+                    <input class="medium" id="prependedInput" name="prependedInput" size="16" type="text" />
+                  </div>
+                </div>
+              </div><!-- /clearfix -->
+              <div class="clearfix">
+                <label for="prependedInput2">Prepended checkbox</label>
+                <div class="input">
+    
+                  <div class="input-prepend">
+                    <label class="add-on"><input type="checkbox" name="" id="" value="" /></label>
+                    <input class="mini" id="prependedInput2" name="prependedInput2" size="16" type="text" />
+                  </div>
+                </div>
+              </div><!-- /clearfix -->
+              <div class="clearfix">
+                <label for="appendedInput">Appended checkbox</label>
+    
+                <div class="input">
+                  <div class="input-append">
+                    <input class="mini" id="appendedInput" name="appendedInput" size="16" type="text" />
+                    <label class="add-on active"><input type="checkbox" name="" id="" value="" checked="checked" /></label>
+                  </div>
+                </div>
+              </div><!-- /clearfix -->
+              <div class="clearfix">
+                <label for="fileInput">File input</label>
+    
+                <div class="input">
+                  <input class="input-file" id="fileInput" name="fileInput" type="file" />
+                </div>
+              </div><!-- /clearfix -->
+            </fieldset>
+            <fieldset>
+              <legend>Example form legend</legend>
+              <div class="clearfix">
+    
+                <label id="optionsCheckboxes">List of options</label>
+                <div class="input">
+                  <ul class="inputs-list">
+                    <li>
+                      <label>
+                        <input type="checkbox" name="optionsCheckboxes" value="option1" />
+                        <span>Option one is this and that&mdash;be sure to include why it’s great</span>
+    
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" name="optionsCheckboxes" value="option2" />
+                        <span>Option two can also be checked and included in form results</span>
+                      </label>
+                    </li>
+    
+                    <li>
+                      <label>
+                        <input type="checkbox" name="optionsCheckboxes" value="option2" />
+                        <span>Option three can&mdash;yes, you guessed it&mdash;also be checked and included in form results</span>
+                      </label>
+                    </li>
+                    <li>
+    
+                      <label class="disabled">
+                        <input type="checkbox" name="optionsCheckboxes" value="option2" disabled />
+                        <span>Option four cannot be checked as it is disabled.</span>
+                      </label>
+                    </li>
+                  </ul>
+                  <span class="help-block">
+                    <strong>Note:</strong> Labels surround all the options for much larger click areas and a more usable form.
+                  </span>
+    
+                </div>
+              </div><!-- /clearfix -->
+              <div class="clearfix">
+                <label>Date range</label>
+                <div class="input">
+                  <div class="inline-inputs">
+                    <input class="small" type="text" value="May 1, 2011" />
+                    <input class="mini" type="text" value="12:00am" />
+    
+                    to
+                    <input class="small" type="text" value="May 8, 2011" />
+                    <input class="mini" type="text" value="11:59pm" />
+                    <span class="help-inline">All times are shown as Pacific Standard Time (GMT -08:00).</span>
+                  </div>
+                </div>
+              </div><!-- /clearfix -->
+              <div class="clearfix">
+                <label for="textarea">Textarea</label>
+    
+                <div class="input">
+                  <textarea class="xxlarge" id="textarea2" name="textarea2" rows="3"></textarea>
+                  <span class="help-block">
+                    Block of help text to describe the field above if need be.
+                  </span>
+                </div>
+              </div><!-- /clearfix -->
+              <div class="clearfix">
+                <label id="optionsRadio">List of options</label>
+    
+                <div class="input">
+                  <ul class="inputs-list">
+                    <li>
+                      <label>
+                        <input type="radio" checked name="optionsRadios" value="option1" />
+                        <span>Option one is this and that&mdash;be sure to include why it’s great</span>
+                      </label>
+                    </li>
+    
+                    <li>
+                      <label>
+                        <input type="radio" name="optionsRadios" value="option2" />
+                        <span>Option two can is something else and selecting it will deselect options 1</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+    
+              </div><!-- /clearfix -->
+              <div class="actions">
+                <input type="submit" class="btn primary" value="Save changes">&nbsp;<button type="reset" class="btn">Cancel</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div><!-- /row -->
+    
+      <div class="row">
+        <div class="span4">
+          <h2>Stacked forms</h2>
+          <p>Add <code>.form-stacked</code> to your form’s HTML and you’ll have labels on top of their fields instead of to their left. This works great if your forms are short or you have two columns of inputs for heavier forms.</p>
+    
+        </div>
+        <div class="span12">
+          <form action="" class="form-stacked">
+            <fieldset>
+              <legend>Example form legend</legend>
+              <div class="clearfix">
+                <label for="xlInput3">X-Large input</label>
+                <div class="input">
+    
+                  <input class="xlarge" id="xlInput3" name="xlInput3" size="30" type="text" />
+                </div>
+              </div><!-- /clearfix -->
+              <div class="clearfix">
+                <label for="stackedSelect">Select</label>
+                <div class="input">
+                  <select name="stackedSelect" id="stackedSelect">
+                    <option>1</option>
+    
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div><!-- /clearfix -->
+    
+            </fieldset>
+            <fieldset>
+              <legend>Example form legend</legend>
+              <div class="clearfix error">
+                <label for="xlInput4">X-Large input</label>
+                <div class="input">
+                  <input class="xlarge error" id="xlInput4" name="xlInput4" size="30" type="text" />
+                  <span class="help-inline">Small snippet of help text</span>
+    
+                </div>
+              </div><!-- /clearfix -->
+              <div class="clearfix">
+                <label id="optionsCheckboxes">List of options</label>
+                <div class="input">
+                  <ul class="inputs-list">
+                    <li>
+                      <label>
+    
+                        <input type="checkbox" name="optionsCheckboxes" value="option1" />
+                        <span>Option one is this and that&mdash;be sure to include why it’s great</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="checkbox" name="optionsCheckboxes" value="option2" />
+                        <span>Option two can also be checked and included in form results</span>
+    
+                      </label>
+                    </li>
+                  </ul>
+                  <span class="help-block">
+                    <strong>Note:</strong> Labels surround all the options for much larger click areas and a more usable form.
+                  </span>
+                </div>
+              </div><!-- /clearfix -->
+    
+            </fieldset>
+            <div class="actions">
+              <button type="submit" class="btn primary">Save changes</button>&nbsp;<button type="reset" class="btn">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div><!-- /row -->
+    </section>
+    
+    
+    <!-- Forms
+    ================================================== -->
+    <section id="forms">
+      <h1>Button, Pagination</h1>
+    
+    
+      <div class="row">
+        <div class="span4">
+          <h2>Buttons</h2>
+          <p>As a convention, buttons are used for actions while links are used for objects. For instance, "Download" could be a button and "recent activity" could be a link.</p>
+    
+          <p>All buttons default to a light gray style, but a number of functional classes can be applied for different color styles. These classes include a blue <code>.primary</code> class, a light-blue <code>.info</code> class, a green <code>.success</code> class, and a red <code>.danger</code> class.</p>
+        </div>
+    
+        <div class="span12">
+          <h3>Example buttons</h3>
+          <p>Button styles can be applied to anything with the <code>.btn</code> applied. Typically you’ll want to apply these to only <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, and select <code>&lt;input&gt;</code> elements. Here’s how it looks:</p>
+    
+          <div class="well" style="padding: 14px 19px;">
+            <button class="btn primary">Primary</button>&nbsp;<button class="btn">Default</button>&nbsp;<button class="btn info">Info</button>&nbsp;<button class="btn success">Success</button>&nbsp;<button class="btn danger">Danger</button>
+          </div>
+          <h3>Alternate sizes</h3>
+          <p>Fancy larger or smaller buttons? Have at it!</p>
+    
+          <div class="well">
+            <a href="#" class="btn large primary">Primary action</a>
+            <a href="#" class="btn large">Action</a>
+          </div>
+          <div class="well" style="padding: 16px 19px;">
+            <a href="#" class="btn small primary">Primary action</a>
+            <a href="#" class="btn small">Action</a>
+    
+          </div>
+          <h3>Disabled state</h3>
+          <p>For buttons that are not active or are disabled by the app for one reason or another, use the disabled state. That’s <code>.disabled</code> for links and <code>:disabled</code> for <code>&lt;button&gt;</code> elements.</p>
+    
+          <h4>Links</h4>
+          <div class="well">
+            <a href="#" class="btn large primary disabled">Primary action</a>
+            <a href="#" class="btn large disabled">Action</a>
+          </div>
+          <h4>Buttons</h4>
+          <div class="well">
+    
+            <button class="btn large primary disabled" disabled="disabled">Primary action</button>&nbsp;<button class="btn large" disabled>Action</button>
+          </div>
+        </div>
+      </div><!-- /row -->
+    </section>
+    
+
+
+  <!-- Pagination -->
+  <div class="row">
+    <div class="span4">
+      <h2>Pagination</h2>
+      <p>Ultra simplistic and minimally styled pagination inspired by Rdio. The large block is hard to miss, easily scalable, and provides large click areas.</p>
+
+    </div>
+    <div class="span12">
+      <div class="pagination">
+        <ul>
+          <li class="prev disabled"><a href="#">&larr; Previous</a></li>
+          <li class="active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li class="next"><a href="#">Next &raquo;</a></li>
+        </ul>
+      </div>
+      <div class="pagination">
+
+        <ul>
+          <li class="prev"><a href="#">&larr; Previous</a></li>
+          <li class="active"><a href="#">10</a></li>
+          <li><a href="#">11</a></li>
+          <li><a href="#">12</a></li>
+          <li class="disabled"><a href="#">…</a></li>
+
+          <li><a href="#">19</a></li>
+          <li><a href="#">20</a></li>
+          <li><a href="#">21</a></li>
+          <li class="next"><a href="#">Next &raquo;</a></li>
+        </ul>
+      </div>
+      <div class="pagination">
+
+        <ul>
+          <li class="prev"><a href="#">&larr; Previous</a></li>
+          <li><a href="#">10</a></li>
+          <li><a href="#">11</a></li>
+          <li><a href="#">12</a></li>
+          <li><a href="#">13</a></li>
+
+          <li><a href="#">14</a></li>
+          <li class="active"><a href="#">15</a></li>
+          <li><a href="#">16</a></li>
+          <li><a href="#">17</a></li>
+          <li><a href="#">18</a></li>
+          <li><a href="#">19</a></li>
+
+          <li><a href="#">20</a></li>
+          <li class="next"><a href="#">Next &raquo;</a></li>
+        </ul>
+      </div>
+<pre class="prettyprint linenums">
+&lt;div class="pagination"&gt;
+  &lt;ul&gt;
+    &lt;li class="prev disabled"&gt;&lt;a href="#"&gt;&amp;larr; Previous&lt;/a&gt;&lt;/li>
+    &lt;li class="active"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+
+    &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+
+    &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="next"&gt;&lt;a href="#"&gt;Next &amp;rarr;&lt;/a&gt;&lt;/li>
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+</pre>
+    </div>
+  </div><!-- /row -->
+
+</section>
+
+
+
+<!-- Alerts & Messages
+================================================== -->
+<section id="alerts">
+  <div class="page-header">
+    <h1>Alerts &amp; Errors <small>Styles for success, warning, and error messages or alerts</small></h1>
+
+  </div>
+  <!-- Basic alert messages -->
+  <div class="row">
+    <div class="span4">
+      <h2>Basic alerts</h2>
+      <p><code>.alert-message</code></p>
+      <p>One-line messages for highlighting the failure, possible failure, or success of an action. Particularly useful for forms.</p>
+
+      <p><a class="btn js-btn" href="./javascript.html#alerts">Get the javascript &raquo;</a></p>
+    </div>
+    <div class="span12">
+      <div class="alert-message warning">
+        <a class="close" href="#">&times;</a>
+        <p><strong>Holy guacamole!</strong> Best check yo self, you’re not looking too good.</p>
+      </div>
+
+      <div class="alert-message error">
+        <a class="close" href="#">&times;</a>
+        <p><strong>Oh snap!</strong> Change this and that and try again.</p>
+      </div>
+      <div class="alert-message success">
+        <a class="close" href="#">&times;</a>
+        <p><strong>Well done!</strong> You successfully read this alert message.</p>
+
+      </div>
+      <div class="alert-message info">
+        <a class="close" href="#">&times;</a>
+        <p><strong>Heads up!</strong> This is an alert that needs your attention, but it’s not a huge priority just yet.</p>
+      </div>
+
+      <h4>Example code</h4>
+
+<pre class="prettyprint linenums">
+&lt;div class="alert-message warning"&gt;
+  &lt;a class="close" href="#"&gt;&times;&lt;/a&gt;
+  &lt;p&gt;&lt;strong&gt;Holy guacamole!&lt;/strong&gt; Best check yo self, you’re not looking too good.&lt;/p&gt;
+&lt;/div&gt;
+
+</pre>
+    </div>
+  </div><!-- /row -->
+  <!-- Block messages -->
+  <div class="row">
+    <div class="span4">
+      <h2>Block messages</h2>
+      <p><code>.alert-message.block-message</code></p>
+
+      <p>For messages that require a bit of explanation, we have paragraph style alerts. These are perfect for bubbling up longer error messages, warning a user of a pending action, or just presenting information for more emphasis on the page.</p>
+      <p><a class="btn js-btn" href="./javascript.html#alerts">Get the javascript &raquo;</a></p>
+    </div>
+    <div class="span12">
+      <div class="alert-message block-message warning">
+        <a class="close" href="#">&times;</a>
+        <p><strong>Holy guacamole! This is a warning!</strong> Best check yo self, you’re not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+
+        <div class="alert-actions">
+          <a class="btn small" href="#">Take this action</a> <a class="btn small" href="#">Or do this</a>
+        </div>
+      </div>
+      <div class="alert-message block-message error">
+        <a class="close" href="#">&times;</a>
+        <p><strong>Oh snap! You got an error!</strong> Change this and that and try again.</p>
+
+        <ul>
+          <li>Duis mollis est non commodo luctus</li>
+          <li>Nisi erat porttitor ligula</li>
+          <li>Eget lacinia odio sem nec elit</li>
+        </ul>
+        <div class="alert-actions">
+          <a class="btn small" href="#">Take this action</a> <a class="btn small" href="#">Or do this</a>
+
+        </div>
+      </div>
+      <div class="alert-message block-message success">
+        <a class="close" href="#">&times;</a>
+        <p><strong>Well done!</strong> You successfully read this alert message. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum.</p>
+        <div class="alert-actions">
+          <a class="btn small" href="#">Take this action</a> <a class="btn small" href="#">Or do this</a>
+
+        </div>
+      </div>
+      <div class="alert-message block-message info">
+        <a class="close" href="#">&times;</a>
+        <p><strong>Heads up!</strong> This is an alert that needs your attention, but it’s not a huge priority just yet.</p>
+        <div class="alert-actions">
+          <a class="btn small" href="#">Take this action</a> <a class="btn small" href="#">Or do this</a>
+
+        </div>
+      </div>
+
+      <h4>Example code</h4>
+<pre class="prettyprint linenums">
+&lt;div class="alert-message block-message warning"&gt;
+  &lt;a class="close" href="#"&gt;&times;&lt;/a&gt;
+  &lt;p&gt;&lt;strong&gt;Holy guacamole! This is a warning!&lt;/strong&gt; Best check yo self, you’re not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.&lt;/p&gt;
+
+  &lt;div class="alert-actions"&gt;
+    &lt;a class="btn small" href="#"&gt;Take this action&lt;/a&gt; &lt;a class="btn small" href="#"&gt;Or do this&lt;/a>
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+    </div>
+
+  </div><!-- /row -->
+</section>
+
+
+
+    <!-- Tips
+    ================================================== -->
+
+    <section id="twipsy" class="sixteen columns">
+      <h1>Twipsy <small>bootstrap-twipsy.js</small></h1>
+      <div class="row">
+        <div class="three columns alpha">
+          <p>Based on the excellent jQuery.tipsy plugin written by Jason Frame; twipsy is an updated version, which doesn't rely on images, uses css3 for animations, and data-attributes for title storage!</p>
+          <a href="../js/bootstrap-twipsy.js" target="_blank" class="btn primary">Download</a>
+        </div>
+        <div class="twelve columns offset-by-one omega">
+          <h3>Using bootstrap-twipsy.js</h3>
+          <pre class="prettyprint linenums">$('#example').twipsy(options)</pre>
+          <h3>Options</h3>
+          <table class="zebra-striped">
+            <thead>
+             <tr>
+               <th style="width: 100px;">Name</th>
+               <th style="width: 100px;">type</th>
+               <th style="width: 50px;">default</th>
+               <th>description</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+               <td>animate</td>
+               <td>boolean</td>
+               <td>true</td>
+               <td>apply a css fade transition to the tooltip</td>
+             </tr>
+             <tr>
+               <td>delayIn</td>
+               <td>number</td>
+               <td>0</td>
+               <td>delay before showing tooltip (ms)</td>
+             </tr>
+             <tr>
+               <td>delayOut</td>
+               <td>number</td>
+               <td>0</td>
+               <td>delay before hiding tooltip (ms)</td>
+             </tr>
+             <tr>
+               <td>fallback</td>
+               <td>string</td>
+               <td>''</td>
+               <td>text to use when no tooltip title is present</td>
+             </tr>
+             <tr>
+               <td>placement</td>
+               <td>string</td>
+               <td>'above'</td>
+               <td>how to position the tooltip - above | below | left | right</td>
+             </tr>
+             <tr>
+               <td>html</td>
+               <td>boolean</td>
+               <td>false</td>
+               <td>allows html content within tooltip</td>
+             </tr>
+             <tr>
+               <td>live</td>
+               <td>boolean</td>
+               <td>false</td>
+               <td>use event delegation instead of individual event handlers</td>
+             </tr>
+             <tr>
+               <td>offset</td>
+               <td>number</td>
+               <td>0</td>
+               <td>pixel offset of tooltip from target element</td>
+             </tr>
+             <tr>
+               <td>title</td>
+               <td>string | function</td>
+               <td>'title'</td>
+               <td>attribute or method for retrieving title text</td>
+             </tr>
+             <tr>
+               <td>trigger</td>
+               <td>string</td>
+               <td>'hover'</td>
+               <td>how tooltip is triggered - hover | focus | manual</td>
+             </tr>
+            </tbody>
+          </table>
+          <h3>Methods</h3>
+          <h4>$().twipsy(options)</h4>
+          <p>Attaches a twipsy handler to an element collection.</p>
+          <h4>.twipsy('show')</h4>
+          <p>Reveals an elements twipsy.</p>
+          <pre class="prettyprint linenums">$('#element').twipsy('show')</pre>
+          <h4>.twipsy('hide')</h4>
+          <p>Hides an elements twipsy.</p>
+          <pre class="prettyprint linenums">$('#element').twipsy('hide')</pre>
+          <h4>.twipsy(true)</h4>
+          <p>Returns an elements twipsy class instance.</p>
+          <pre class="prettyprint linenums">$('#element').twipsy(true)</pre>
+          <p><span class="label notice">Notice</span> Alternatively, this can be retrieved with <code>$().data('twipsy')</code>.</p>
+          <h3>Demo</h3>
+          <div class="well">
+            <p class="muted">Tight pants next level keffiyeh <a href="#" rel='twipsy' title='Some title text'>you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a href="#" rel='twipsy' title='Another twipsy'>have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A <a href="#" rel='twipsy' title='Another one here too'>really ironic</a> artisan whatever keytar, scenester farm-to-table banksy Austin <a href="#" rel='twipsy' title='The last tip!'>twitter handle</a> freegan cred raw denim single-origin coffee viral.
+            </p>
+          </div>
+          <script>
+            $(function () {
+              $("a[rel=twipsy]").twipsy({
+                live: true
+              })
+            })
+          </script>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popovers
+    ================================================== -->
+
+    <section id="popover">
+      <div class="page-header">
+        <h1>Popovers <small>bootstrap-popover.js</small></h1>
+      </div>
+      <div class="row">
+        <div class="span4 columns">
+          <p>The popover plugin provides a simple interface for adding popovers to your application. It extends the <a href="#twipsy">boostrap-twipsy.js</a> plugin, so be sure to grab that file as well when including popovers in your project!</p>
+          <a href="../js/bootstrap-popover.js" target="_blank" class="btn primary">Download</a>
+        </div>
+        <div class="span12 columns">
+          <h3>Using boostrap-popover.js</h3>
+          <pre class="prettyprint linenums">$('#example').popover(options)</pre>
+          <h3>Options</h3>
+          <table class="zebra-striped">
+            <thead>
+             <tr>
+               <th style="width: 100px;">Name</th>
+               <th style="width: 100px;">type</th>
+               <th style="width: 50px;">default</th>
+               <th>description</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+               <td>animate</td>
+               <td>boolean</td>
+               <td>true</td>
+               <td>apply a css fade transition to the tooltip</td>
+             </tr>
+             <tr>
+               <td>delayIn</td>
+               <td>number</td>
+               <td>0</td>
+               <td>delay before showing tooltip (ms)</td>
+             </tr>
+             <tr>
+               <td>delayOut</td>
+               <td>number</td>
+               <td>0</td>
+               <td>delay before hiding tooltip (ms)</td>
+             </tr>
+             <tr>
+               <td>fallback</td>
+               <td>string</td>
+               <td>''</td>
+               <td>text to use when no tooltip title is present</td>
+             </tr>
+             <tr>
+               <td>placement</td>
+               <td>string</td>
+               <td>'right'</td>
+               <td>how to position the tooltip - above | below | left | right</td>
+             </tr>
+             <tr>
+               <td>html</td>
+               <td>boolean</td>
+               <td>false</td>
+               <td>allows html content within tooltip</td>
+             </tr>
+             <tr>
+               <td>live</td>
+               <td>boolean</td>
+               <td>false</td>
+               <td>use event delegation instead of individual event handlers</td>
+             </tr>
+             <tr>
+               <td>offset</td>
+               <td>number</td>
+               <td>0</td>
+               <td>pixel offset of tooltip from target element</td>
+             </tr>
+             <tr>
+               <td>title</td>
+               <td>string | function</td>
+               <td>'title'</td>
+               <td>attribute or method for retrieving title text</td>
+             </tr>
+             <tr>
+               <td>content</td>
+               <td>string | function</td>
+               <td>'data-content'</td>
+               <td>attribute or method for retrieving content text</td>
+             </tr>
+             <tr>
+               <td>trigger</td>
+               <td>string</td>
+               <td>'hover'</td>
+               <td>how tooltip is triggered - hover | focus | manual</td>
+             </tr>
+            </tbody>
+          </table>
+          <h3>Methods</h3>
+          <h4>$().popover(options)</h4>
+          <p>Initializes popovers for an element collection.</p>
+          <h4>.popover('show')</h4>
+          <p>Reveals an elements popover.</p>
+          <pre class="prettyprint linenums">$('#element').popover('show')</pre>
+          <h4>.popover('hide')</h4>
+          <p>Hides an elements popover.</p>
+          <pre class="prettyprint linenums">$('#element').popover('hide')</pre>
+          <h3>Demo</h3>
+          <a href="#" class="btn danger" rel="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">hover for popover</a>
+          <script>
+            $(function () {
+              $("a[rel=popover]")
+                .popover({
+                  offset: 10
+                })
+                .click(function(e) {
+                  e.preventDefault()
+                })
+            })
+          </script>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Alerts
+    ================================================== -->
+
+    <section id="alerts">
+      <div class="page-header">
+        <h1>Alerts <small>bootstrap-alerts.js</small></h1>
+      </div>
+      <div class="row">
+        <div class="span4 columns">
+          <p>The alert plugin is a super tiny class for adding close functionality to alerts.</p>
+          <a href="../js/bootstrap-alerts.js" target="_blank" class="btn primary">Download</a>
+        </div>
+        <div class="span12 columns">
+          <h3>Using bootstrap-alerts.js</h3>
+          <pre class="prettyprint linenums">$(".alert-message").alert()</pre>
+          <h3>Markup</h3>
+          <p>Just add a <code>data-alert</code> attribute to your alert messages to automatically give them close functionality.</p>
+          <h3>Methods</h3>
+          <h4>$().alert()</h4>
+          <p>Wraps all alerts with close functionality. To have your alerts animate out when closed, make sure they have the <code>.fade</code> and <code>.in</code> class already applied to them.</p>
+          <h4>.alert('close')</h4>
+          <p>Closes an alert.</p>
+          <pre class="prettyprint linenums">$(".alert-message").alert('close')</pre>
+          <h3>Demo</h3>
+          <div class="alert-message warning fade in" data-alert="alert" >
+            <a class="close" href="#">&times;</a>
+            <p><strong>Holy guacamole!</strong> Best check yo self, you’re not looking too good.</p>
+          </div>
+          <div class="alert-message block-message error fade in" data-alert="alert" >
+            <a class="close" href="#">&times;</a>
+            <p><strong>Oh snap! You got an error!</strong> Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+            <div class="alert-actions">
+              <a class="btn small" href="#">Take this action</a> <a class="btn small" href="#">Or do this</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!--Footer-->
+    <footer class="sixteen columns">
+      <h3>Footer</h3>
+      <p>This is the footer, where magical things are often overlooked.</p>
+    </footer>
+    </div>
+
+  
+
+  <!-- Load the rest of the javascript in a non-blocking fashion.
   ================================================== -->
   <script src="../js/hoodie.js"></script>
 
