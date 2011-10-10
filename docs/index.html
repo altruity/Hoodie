@@ -27,16 +27,23 @@
   ================================================== -->
   <link href="../hoodie.css" rel="stylesheet">
 
-  <!-- Javascript (only Google JSAPI and/or jQuery should block)
+  <!-- Javascript (only LABJS should block)
   ================================================== -->
-  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
-  <script type="text/javascript">
-    if( window.google && window.google.load ) {
-        google.load("jquery", "1.6.4", {uncompressed: false});
-    } else {
-        document.write('<script type="text/javascript" src="../js/jquery-1.6.4.min.js"><\/script>');
-    }
+  <script type="text/javascript" src="../js/LAB.min.js"></script>
+
+  <!-- Load the rest of the javascript in a non-blocking fashion.
+  ================================================== -->
+  <script>
+     $LAB
+      .script("../js/modernizr-2.0.6.min.js")
+      .script("../js/imgsizer.js")
+      .script("../js/jquery-1.6.4.min.js").wait()
+      .script("../js/bootstrap-twipsy.js")
+      .script("../js/bootstrap-popover.js")
+      .script("../js/bootstrap-alerts.js")
+      .script("assets/js/documentation.js");
   </script>
+
 
   <!-- Favicons
   ================================================== -->
@@ -48,9 +55,11 @@
   <!-- Documentation Specific Settings
   ================================================== -->
   <link href="assets/css/docs.css" rel="stylesheet">
+  <script src="http://autobahn.tablesorter.com/jquery.tablesorter.min.js"></script>
   <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
   <script src="assets/js/google-code-prettify/prettify.js"></script>
   <script>$(function () { prettyPrint() })</script>
+  <script type="text/javascript" src="assets/js/documentation.js"></script>
 
 </head>
 <body>
@@ -129,14 +138,14 @@
     
       <!-- Headings & Paragraph Copy -->
       <div class="row">
-        <div class="three columns alpha">
+        <div class="four columns alpha">
           <h2>Headings &amp; copy</h2>
     
           <p>A standard typographic hierarchy for structuring your webpages.</p>
           <p>The entire typographic grid is based on two Less variables in our variables.less file: <code>@basefont</code> and <code>@baseline</code>. The first is the base font-size used throughout and the second is the base line-height.</p>
           <p>We use those variables, and some math, to create the margins, paddings, and line-heights of all our type and more.</p>
         </div>
-        <div class="three columns offset-by-one">
+        <div class="four columns">
     
           <h1>h1. Heading 1</h1>
           <h2>h2. Heading 2</h2>
@@ -146,7 +155,7 @@
           <h6>h6. Heading 6</h6>
     
         </div>
-        <div class="eight columns offset-by-one omega">
+        <div class="eight columns omega">
           <h3>Example paragraph</h3>
           <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
           <h1>Example heading <small>Has sub-heading&hellip;</small></h1>
@@ -155,7 +164,7 @@
     
       <!-- Misc Elements -->
       <div class="row">
-        <div class="three columns alpha">
+        <div class="four columns alpha">
           <h2>Misc. elements</h2>
           <p>Using emphasis, addresses, &amp; abbreviations</p>
           <p>
@@ -166,7 +175,7 @@
             <code>&lt;abbr&gt;</code>
           </p>
         </div>
-        <div class="twelve columns offset-by-one omega">
+        <div class="twelve columns omega">
     
           <h3>When to use</h3>
           <p>Emphasis tags (<code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code>) should be used to indicate additional importance or emphasis of a word or phrase relative to its surrounding copy. Use <code>&lt;strong&gt;</code> for importance and <code>&lt;em&gt;</code> for <em>stress</em> emphasis.</p>
@@ -371,79 +380,7 @@
         </div>
       </div><!-- /row -->
     
-      <!-- Labels -->
-      <div class="row">
-        <div class="three columns alpha">
-          <h2>Inline labels</h2>
-    
-          <p>
-            <code>&lt;span class="label"&gt;</code>
-          </p>
-          <p>Call attention to or flag any phrase in your body text.</p>
-        </div>
-        <div class="twelve columns offset-by-one omega">
-          <h3>Label anything</h3>
-    
-          <p>Ever needed one of those fancy <span class="label success">New!</span> or <span class="label important">Important</span> flags when writing code? Well, now you have them. Here's what's included by default:</p>
-          <table class="zebra-striped">
-            <thead>
-              <tr>
-                <th style="width: 50%;">Label</th>
-    
-                <th>Result</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <code>&lt;span class="label"&gt;Default&lt;/span&gt;</code>
-    
-                </td>
-                <td>
-                  <span class="label">Default</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <code>&lt;span class="label success"&gt;New&lt;/span&gt;</code>
-    
-                </td>
-                <td>
-                  <span class="label success">New</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <code>&lt;span class="label warning"&gt;Warning&lt;/span&gt;</code>
-    
-                </td>
-                <td>
-                  <span class="label warning">Warning</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <code>&lt;span class="label important"&gt;Important&lt;/span&gt;</code>
-    
-                </td>
-                <td>
-                  <span class="label important">Important</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <code>&lt;span class="label notice"&gt;Notice&lt;/span&gt;</code>
-    
-                </td>
-                <td>
-                  <span class="label notice">Notice</span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-    
-      </div><!-- /row -->
+
     
     </section>
 
@@ -455,7 +392,7 @@
     
       <!-- Table structure -->
       <div class="row">
-        <div class="three columns alpha">
+        <div class="four columns alpha">
           <h2>Building tables</h2>
           <p>
             <code>&lt;table&gt;</code>
@@ -474,7 +411,7 @@
     
           <p>Similar to the column headers, all your table’s body content should be wrapped in a <code>&lt;tbody&gt;</code> so your hierarchy is <code>&lt;tbody&gt;</code> > <code>&lt;tr&gt;</code> > <code>&lt;td&gt;</code>.</p>
         </div>
-        <div class="twelve columns offset-by-one omega">
+        <div class="twelve columnschrome omega">
     
           <h3>Example: Default table styles</h3>
           <p>All tables will be automatically styled with only the essential borders to ensure readability and maintain structure. No need to add extra classes or attributes.</p>
@@ -619,11 +556,11 @@
       <h1>Forms</h1>
     
       <div class="row">
-        <div class="three columns alpha">
+        <div class="four columns alpha">
           <h2>Default styles</h2>
           <p>All forms are given default styles to present them in a readable and scalable way. Styles are provided for text inputs, select lists, textareas, radio buttons and checkboxes, and buttons.</p>
         </div>
-        <div class="twelve columns offset-by-one omega">
+        <div class="twelve columns omega">
           <form>
             <fieldset>
     
@@ -1043,27 +980,25 @@
     
     </section>
 
-
+    
+    
     <!-- Alerts & Messages
     ================================================== -->
     <section id="alerts" class="sixteen columns">
-    <h1>Alerts &amp; Errors <small>Styles for success, warning, and error messages or alerts</small></h1>
-      
+      <h1>Alerts &amp; Errors <small>Styles for success, warning, and error messages or alerts</small></h1>
       <!-- Basic alert messages -->
       <div class="row">
-        <div class="three columns alpha">
+        <div class="four columns alpha">
           <h2>Basic alerts</h2>
           <p><code>.alert-message</code></p>
           <p>One-line messages for highlighting the failure, possible failure, or success of an action. Particularly useful for forms.</p>
-    
           <p><a class="btn js-btn" href="./javascript.html#alerts">Get the javascript &raquo;</a></p>
         </div>
-        <div class="twelve columns offset-by-one omega">
+        <div class="twelve columns omega">
           <div class="alert-message warning">
             <a class="close" href="#">&times;</a>
             <p><strong>Holy guacamole!</strong> Best check yo self, you’re not looking too good.</p>
           </div>
-    
           <div class="alert-message error">
             <a class="close" href="#">&times;</a>
             <p><strong>Oh snap!</strong> Change this and that and try again.</p>
@@ -1071,7 +1006,6 @@
           <div class="alert-message success">
             <a class="close" href="#">&times;</a>
             <p><strong>Well done!</strong> You successfully read this alert message.</p>
-    
           </div>
           <div class="alert-message info">
             <a class="close" href="#">&times;</a>
@@ -1079,31 +1013,26 @@
           </div>
     
           <h4>Example code</h4>
-      
-      <pre class="prettyprint linenums">
-      &lt;div class="alert-message warning"&gt;
-        &lt;a class="close" href="#"&gt;&times;&lt;/a&gt;
-        &lt;p&gt;&lt;strong&gt;Holy guacamole!&lt;/strong&gt; Best check yo self, you’re not looking too good.&lt;/p&gt;
-      &lt;/div&gt;
-      
-      </pre>
-  
+    <pre class="prettyprint linenums">
+    &lt;div class="alert-message warning"&gt;
+      &lt;a class="close" href="#"&gt;&times;&lt;/a&gt;
+      &lt;p&gt;&lt;strong&gt;Holy guacamole!&lt;/strong&gt; Best check yo self, you’re not looking too good.&lt;/p&gt;
+    &lt;/div&gt;
+    </pre>
+        </div>
       </div><!-- /row -->
-  
       <!-- Block messages -->
       <div class="row">
-        <div class="three columns alpha">
+        <div class="four columns alpha">
           <h2>Block messages</h2>
           <p><code>.alert-message.block-message</code></p>
-    
           <p>For messages that require a bit of explanation, we have paragraph style alerts. These are perfect for bubbling up longer error messages, warning a user of a pending action, or just presenting information for more emphasis on the page.</p>
           <p><a class="btn js-btn" href="./javascript.html#alerts">Get the javascript &raquo;</a></p>
         </div>
-        <div class="twelve columns offset-by-one omega">
+        <div class="twelve columns omega">
           <div class="alert-message block-message warning">
             <a class="close" href="#">&times;</a>
             <p><strong>Holy guacamole! This is a warning!</strong> Best check yo self, you’re not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-    
             <div class="alert-actions">
               <a class="btn small" href="#">Take this action</a> <a class="btn small" href="#">Or do this</a>
             </div>
@@ -1111,7 +1040,6 @@
           <div class="alert-message block-message error">
             <a class="close" href="#">&times;</a>
             <p><strong>Oh snap! You got an error!</strong> Change this and that and try again.</p>
-    
             <ul>
               <li>Duis mollis est non commodo luctus</li>
               <li>Nisi erat porttitor ligula</li>
@@ -1119,7 +1047,6 @@
             </ul>
             <div class="alert-actions">
               <a class="btn small" href="#">Take this action</a> <a class="btn small" href="#">Or do this</a>
-    
             </div>
           </div>
           <div class="alert-message block-message success">
@@ -1127,7 +1054,6 @@
             <p><strong>Well done!</strong> You successfully read this alert message. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum.</p>
             <div class="alert-actions">
               <a class="btn small" href="#">Take this action</a> <a class="btn small" href="#">Or do this</a>
-    
             </div>
           </div>
           <div class="alert-message block-message info">
@@ -1135,316 +1061,135 @@
             <p><strong>Heads up!</strong> This is an alert that needs your attention, but it’s not a huge priority just yet.</p>
             <div class="alert-actions">
               <a class="btn small" href="#">Take this action</a> <a class="btn small" href="#">Or do this</a>
-    
             </div>
           </div>
-      
-        <h4>Example code</h4>
-        <pre class="prettyprint linenums">
-        &lt;div class="alert-message block-message warning"&gt;
-          &lt;a class="close" href="#"&gt;&times;&lt;/a&gt;
-          &lt;p&gt;&lt;strong&gt;Holy guacamole! This is a warning!&lt;/strong&gt; Best check yo self, you’re not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.&lt;/p&gt;
-        
-          &lt;div class="alert-actions"&gt;
-            &lt;a class="btn small" href="#"&gt;Take this action&lt;/a&gt; &lt;a class="btn small" href="#"&gt;Or do this&lt;/a>
-          &lt;/div&gt;
-        &lt;/div&gt;
-        </pre>
+    
+          <h4>Example code</h4>
+    <pre class="prettyprint linenums">
+    &lt;div class="alert-message block-message warning"&gt;
+      &lt;a class="close" href="#"&gt;&times;&lt;/a&gt;
+      &lt;p&gt;&lt;strong&gt;Holy guacamole! This is a warning!&lt;/strong&gt; Best check yo self, you’re not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.&lt;/p&gt;
+      &lt;div class="alert-actions"&gt;
+        &lt;a class="btn small" href="#"&gt;Take this action&lt;/a&gt; &lt;a class="btn small" href="#"&gt;Or do this&lt;/a>
+      &lt;/div&gt;
+    &lt;/div&gt;
+    </pre>
         </div>
-  
       </div><!-- /row -->
     </section>
     
     
-
-    <!-- Tips
-    ================================================== -->
-
-    <section id="twipsy" class="sixteen columns">
-      <h1>Twipsy <small>bootstrap-twipsy.js</small></h1>
-      <div class="row">
-        <div class="three columns alpha">
-          <p>Based on the excellent jQuery.tipsy plugin written by Jason Frame; twipsy is an updated version, which doesn't rely on images, uses css3 for animations, and data-attributes for title storage!</p>
-          <a href="../js/bootstrap-twipsy.js" target="_blank" class="btn primary">Download</a>
-        </div>
-        <div class="twelve columns offset-by-one omega">
-          <h3>Using bootstrap-twipsy.js</h3>
-          <pre class="prettyprint linenums">$('#example').twipsy(options)</pre>
-          <h3>Options</h3>
-          <table class="zebra-striped">
-            <thead>
-             <tr>
-               <th style="width: 100px;">Name</th>
-               <th style="width: 100px;">type</th>
-               <th style="width: 50px;">default</th>
-               <th>description</th>
-             </tr>
-            </thead>
-            <tbody>
-             <tr>
-               <td>animate</td>
-               <td>boolean</td>
-               <td>true</td>
-               <td>apply a css fade transition to the tooltip</td>
-             </tr>
-             <tr>
-               <td>delayIn</td>
-               <td>number</td>
-               <td>0</td>
-               <td>delay before showing tooltip (ms)</td>
-             </tr>
-             <tr>
-               <td>delayOut</td>
-               <td>number</td>
-               <td>0</td>
-               <td>delay before hiding tooltip (ms)</td>
-             </tr>
-             <tr>
-               <td>fallback</td>
-               <td>string</td>
-               <td>''</td>
-               <td>text to use when no tooltip title is present</td>
-             </tr>
-             <tr>
-               <td>placement</td>
-               <td>string</td>
-               <td>'above'</td>
-               <td>how to position the tooltip - above | below | left | right</td>
-             </tr>
-             <tr>
-               <td>html</td>
-               <td>boolean</td>
-               <td>false</td>
-               <td>allows html content within tooltip</td>
-             </tr>
-             <tr>
-               <td>live</td>
-               <td>boolean</td>
-               <td>false</td>
-               <td>use event delegation instead of individual event handlers</td>
-             </tr>
-             <tr>
-               <td>offset</td>
-               <td>number</td>
-               <td>0</td>
-               <td>pixel offset of tooltip from target element</td>
-             </tr>
-             <tr>
-               <td>title</td>
-               <td>string | function</td>
-               <td>'title'</td>
-               <td>attribute or method for retrieving title text</td>
-             </tr>
-             <tr>
-               <td>trigger</td>
-               <td>string</td>
-               <td>'hover'</td>
-               <td>how tooltip is triggered - hover | focus | manual</td>
-             </tr>
-            </tbody>
-          </table>
-          <h3>Methods</h3>
-          <h4>$().twipsy(options)</h4>
-          <p>Attaches a twipsy handler to an element collection.</p>
-          <h4>.twipsy('show')</h4>
-          <p>Reveals an elements twipsy.</p>
-          <pre class="prettyprint linenums">$('#element').twipsy('show')</pre>
-          <h4>.twipsy('hide')</h4>
-          <p>Hides an elements twipsy.</p>
-          <pre class="prettyprint linenums">$('#element').twipsy('hide')</pre>
-          <h4>.twipsy(true)</h4>
-          <p>Returns an elements twipsy class instance.</p>
-          <pre class="prettyprint linenums">$('#element').twipsy(true)</pre>
-          <p><span class="label notice">Notice</span> Alternatively, this can be retrieved with <code>$().data('twipsy')</code>.</p>
-          <h3>Demo</h3>
-          <div class="well">
-            <p class="muted">Tight pants next level keffiyeh <a href="#" rel='twipsy' title='Some title text'>you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a href="#" rel='twipsy' title='Another twipsy'>have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A <a href="#" rel='twipsy' title='Another one here too'>really ironic</a> artisan whatever keytar, scenester farm-to-table banksy Austin <a href="#" rel='twipsy' title='The last tip!'>twitter handle</a> freegan cred raw denim single-origin coffee viral.
-            </p>
-          </div>
-          <script>
-            $(function () {
-              $("a[rel=twipsy]").twipsy({
-                live: true
-              })
-            })
-          </script>
-        </div>
-      </div>
-    </section>
-
     <!-- Popovers
     ================================================== -->
-
-    <section id="popover">
+    <section id="popovers" class="sixteen columns">
       <div class="page-header">
-        <h1>Popovers <small>bootstrap-popover.js</small></h1>
+        <h1>Popovers <small>Components for displaying content in tooltips, and popovers</small></h1>
       </div>
+    
+      <!-- Tooltips -->
       <div class="row">
-        <div class="span4 columns">
-          <p>The popover plugin provides a simple interface for adding popovers to your application. It extends the <a href="#twipsy">boostrap-twipsy.js</a> plugin, so be sure to grab that file as well when including popovers in your project!</p>
-          <a href="../js/bootstrap-popover.js" target="_blank" class="btn primary">Download</a>
+        <div class="four columns alpha">
+          <h2>Tooltips</h2>
+          <p>Twipsies are super useful for aiding a confused user and pointing them in the right direction.</p>
+          <p><a class="btn js-btn" href="./javascript.html#twipsy">Get the javascript &raquo;</a></p>
         </div>
-        <div class="span12 columns">
-          <h3>Using boostrap-popover.js</h3>
-          <pre class="prettyprint linenums">$('#example').popover(options)</pre>
-          <h3>Options</h3>
-          <table class="zebra-striped">
-            <thead>
-             <tr>
-               <th style="width: 100px;">Name</th>
-               <th style="width: 100px;">type</th>
-               <th style="width: 50px;">default</th>
-               <th>description</th>
-             </tr>
-            </thead>
-            <tbody>
-             <tr>
-               <td>animate</td>
-               <td>boolean</td>
-               <td>true</td>
-               <td>apply a css fade transition to the tooltip</td>
-             </tr>
-             <tr>
-               <td>delayIn</td>
-               <td>number</td>
-               <td>0</td>
-               <td>delay before showing tooltip (ms)</td>
-             </tr>
-             <tr>
-               <td>delayOut</td>
-               <td>number</td>
-               <td>0</td>
-               <td>delay before hiding tooltip (ms)</td>
-             </tr>
-             <tr>
-               <td>fallback</td>
-               <td>string</td>
-               <td>''</td>
-               <td>text to use when no tooltip title is present</td>
-             </tr>
-             <tr>
-               <td>placement</td>
-               <td>string</td>
-               <td>'right'</td>
-               <td>how to position the tooltip - above | below | left | right</td>
-             </tr>
-             <tr>
-               <td>html</td>
-               <td>boolean</td>
-               <td>false</td>
-               <td>allows html content within tooltip</td>
-             </tr>
-             <tr>
-               <td>live</td>
-               <td>boolean</td>
-               <td>false</td>
-               <td>use event delegation instead of individual event handlers</td>
-             </tr>
-             <tr>
-               <td>offset</td>
-               <td>number</td>
-               <td>0</td>
-               <td>pixel offset of tooltip from target element</td>
-             </tr>
-             <tr>
-               <td>title</td>
-               <td>string | function</td>
-               <td>'title'</td>
-               <td>attribute or method for retrieving title text</td>
-             </tr>
-             <tr>
-               <td>content</td>
-               <td>string | function</td>
-               <td>'data-content'</td>
-               <td>attribute or method for retrieving content text</td>
-             </tr>
-             <tr>
-               <td>trigger</td>
-               <td>string</td>
-               <td>'hover'</td>
-               <td>how tooltip is triggered - hover | focus | manual</td>
-             </tr>
-            </tbody>
-          </table>
-          <h3>Methods</h3>
-          <h4>$().popover(options)</h4>
-          <p>Initializes popovers for an element collection.</p>
-          <h4>.popover('show')</h4>
-          <p>Reveals an elements popover.</p>
-          <pre class="prettyprint linenums">$('#element').popover('show')</pre>
-          <h4>.popover('hide')</h4>
-          <p>Hides an elements popover.</p>
-          <pre class="prettyprint linenums">$('#element').popover('hide')</pre>
-          <h3>Demo</h3>
-          <a href="#" class="btn danger" rel="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">hover for popover</a>
-          <script>
-            $(function () {
-              $("a[rel=popover]")
-                .popover({
-                  offset: 10
-                })
-                .click(function(e) {
-                  e.preventDefault()
-                })
-            })
-          </script>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Alerts
-    ================================================== -->
-
-    <section id="alerts">
-      <div class="page-header">
-        <h1>Alerts <small>bootstrap-alerts.js</small></h1>
-      </div>
-      <div class="row">
-        <div class="span4 columns">
-          <p>The alert plugin is a super tiny class for adding close functionality to alerts.</p>
-          <a href="../js/bootstrap-alerts.js" target="_blank" class="btn primary">Download</a>
-        </div>
-        <div class="span12 columns">
-          <h3>Using bootstrap-alerts.js</h3>
-          <pre class="prettyprint linenums">$(".alert-message").alert()</pre>
-          <h3>Markup</h3>
-          <p>Just add a <code>data-alert</code> attribute to your alert messages to automatically give them close functionality.</p>
-          <h3>Methods</h3>
-          <h4>$().alert()</h4>
-          <p>Wraps all alerts with close functionality. To have your alerts animate out when closed, make sure they have the <code>.fade</code> and <code>.in</code> class already applied to them.</p>
-          <h4>.alert('close')</h4>
-          <p>Closes an alert.</p>
-          <pre class="prettyprint linenums">$(".alert-message").alert('close')</pre>
-          <h3>Demo</h3>
-          <div class="alert-message warning fade in" data-alert="alert" >
-            <a class="close" href="#">&times;</a>
-            <p><strong>Holy guacamole!</strong> Best check yo self, you’re not looking too good.</p>
-          </div>
-          <div class="alert-message block-message error fade in" data-alert="alert" >
-            <a class="close" href="#">&times;</a>
-            <p><strong>Oh snap! You got an error!</strong> Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
-            <div class="alert-actions">
-              <a class="btn small" href="#">Take this action</a> <a class="btn small" href="#">Or do this</a>
+        <div class="twelve columns omega">
+          <div class="twipsies well">
+            <div style="position: relative">
+              <p class="muted" style="margin-bottom: 0">
+    Lorem ipsum dolar sit amet illo error <a href="#" title="below">ipsum</a> veritatis aut iste perspiciatis iste voluptas natus illo quasi odit aut natus consequuntur consequuntur, aut natus illo voluptatem odit perspiciatis laudantium rem doloremque totam voluptas. <a href="#" title="right">Voluptasdicta</a> eaque beatae aperiam ut enim voluptatem explicabo explicabo, voluptas quia odit fugit accusantium totam totam architecto explicabo sit quasi fugit fugit, totam doloremque unde sunt <a href="#" title="left">sed</a> dicta quae accusantium fugit voluptas nemo voluptas voluptatem <a href="#" title="above">rem</a> quae aut veritatis quasi quae.
+              </p>
             </div>
           </div>
         </div>
-      </div>
+      </div><!-- /row -->
+    
+      <!-- Popovers -->
+      <div class="row">
+        <div class="four columns alpha">
+          <h2>Popovers</h2>
+          <p>Use popovers to provide subtextual information to a page without affecting layout.</p>
+          <p><a class="btn js-btn" href="./javascript.html#popover">Get the javascript &raquo;</a></p>
+        </div>
+        <div class="twelve columns omega">
+          <div class="well popover-well">
+             <div class="popover-wrapper">
+              <div class="popover left">
+                <div class="arrow"></div>
+                <div class="inner">
+                  <h3 class="title">Popover Title</h3>
+                  <div class="content">
+                    <p>Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                  </div>
+                </div>
+              </div>
+              <img class="large-bird" src="assets/img/bird.png" >
+            </div>
+          </div>
+        </div>
+      </div><!-- /row -->
     </section>
-
+    
+    
+    <!-- Using Javascript w/ Bootstrap
+     ================================================== -->
+    
+     <section id="javascript" class="sixteen columns">
+       <div class="page-header">
+         <h1>Using javascript with Bootstrap <small>An index of plugins to get you started</small></h1>
+       </div>
+       <div class="row">
+         <div class="four columns alpha">
+           <h2>Getting started</h2>
+           <p>Integrating javascript with the Bootstrap library is super easy. Below we go over the basics and provide you with some awesome plugins to get you started!</p>
+           <p><a class="btn primary" href="./javascript.html">View javascript docs &raquo;</a></p>
+         </div>
+         <div class="twelve columns omega">
+          <h3>What's included</h3>
+           <p>Bring some of Bootstrap's primary components to life with new custom plugins that work with <a href="http://jquery.com/" target="_blank">jQuery</a> and <a href="http://ender.no.de" target="_blank">Ender</a>. We encourage you to extend and modify them to fit your specific development needs.</p>
+           <table class="zebra-striped">
+             <thead>
+               <tr>
+                 <th style="width: 150px;">File</th>
+                 <th>Description</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td><a href="./javascript.html#alerts">bootstrap-alerts.js</a></td>
+                 <td>The alert plugin is a super tiny class for adding close functionality to alerts.</td>
+               </tr>
+               <tr>
+                 <td><a href="./javascript.html#twipsy">bootstrap-twipsy.js</a></td>
+                 <td>Based on the excellent jQuery.tipsy plugin written by Jason Frame; twipsy is an updated version, which doesn't rely on images, uses css3 for animations, and data-attributes for local title storage!</td>
+               </tr>
+               <tr>
+                 <td><a href="./javascript.html#popover">bootstrap-popover.js</a></td>
+                 <td>The popover plugin provides a simple interface for adding popovers to your application. It extends the <a href="#twipsy">boostrap-twipsy.js</a> plugin, so be sure to grab that file as well when including popovers in your project!</td>
+               </tr>
+             </tbody>
+           </table>
+           <h3>Is javascript necessary?</h3>
+           <p><strong>Nope!</strong> Bootstrap is designed first and foremost to be a CSS library. This javascript provides a basic interactive layer on top of the included styles.</p>
+           <p>However, for those who do need javascript, we've provided the plugins above to help you understand how to integrate Bootstrap with javascript and to give you a quick, lightweight option for the basic functionality right away.</p>
+           <p>For more information and to see some live demos, please refer to our <a href="./javascript.html">plugin documentation page</a>.</p>
+         </div>
+       </div>
+    </section>
+       
     
     <!-- Using Bootstrap w/ Less
     ================================================== -->
-    <section id="less">
+    <section id="less" class="sixteen columns">
     <div class="page-header">
       <h1>Using Bootstrap with Less <small>Supercharge your CSS with variables, mixins, and functions</small></h1>
     </div>
     <div class="row">
-      <div class="span4">
+      <div class="four columns alpha">
         <p>Bootstrap was built from <a href="http://markdotto.com/bootstrap/">Preboot</a>, an open-source pack of mixins and variables to be used in conjunction with <a href="http://lesscss.org" target="_blank">Less</a>, a CSS preprocessor for faster and easier web development.</p>
         <p>Check out how we used Preboot in Bootstrap and how you can make use of it should you choose to run Less on your next project.</p>
       </div>
-      <div class="span12">
+      <div class="twelve columns omega">
         <h2>How to use it</h2>
         <p>Use this option to make full use of Bootstrap’s Less variables, mixins, and nesting in CSS via javascript in your browser.</p>
     <pre class="prettyprint linenums">
@@ -1604,11 +1349,5 @@
     </div>
 
   
-
-  <!-- Load the rest of the javascript in a non-blocking fashion.
-  ================================================== -->
-  <script src="../js/hoodie.js"></script>
-
-
   </body>
 </html>
