@@ -42,6 +42,11 @@
 .column.omega, .columns.omega {
   margin-right: 0; }
 
+.column.full-bleed, .columns.full-bleed {
+  margin-left: 0; 
+  margin-right: 0; 
+}
+
 /* Base Grid */
 
 .container {
@@ -77,6 +82,8 @@
     width: 880px; }
   .sixteen.columns {
     width: 940px; }
+  .sixteen.columns.full-bleed {
+    width: 100%; }
   .one-third.column {
     width: 300px; }
   .two-thirds.column {
