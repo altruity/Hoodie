@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>YOUR_TITLE_HERE</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- IE CSS3 Pseudo Elements
+  ================================================== -->
+  <!--[if (gte IE 6)&(lte IE 8)]>
+    <script type="text/javascript" src="js/selectivizr.js"></script>
+  <![endif]-->
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- CSS
+  ================================================== -->
+  <link href="hoodie.min.css" rel="stylesheet">
+
+  <!-- Javascript (only LABJS should block)
+  ================================================== -->
+  <script type="text/javascript" src="js/LAB.min.js"></script>
+
+  <!-- Load the rest of the javascript in a non-blocking fashion.
+  ================================================== -->
+  <script>
+     $LAB
+      .script("js/modernizr-2.0.6.min.js")
+      .script("js/imgsizer.js")
+      .script("js/jquery-1.6.4.min.js").wait()
+      .script("js/bootstrap-twipsy.js")
+      .script("js/bootstrap-popover.js")
+      .script("js/bootstrap-alerts.js");
+  </script>
+
+
+  <!-- Favicons
+  ================================================== -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+</head>
+<body>
+  <div class="container">
+    <header class="sixteen columns">
+        <nav>
+          <a href="#">One</a>
+          <a href="#">Two</a>
+          <a href="#">Three</a>
+          <a href="#">Four</a>
+          <a href="#">Five</a>
+        </nav>
+    </header>
+    
+    <section class="sixteen columns"> 
+      <h1>Full Width</h1>
+      <div class="twelve columns alpha">
+        <article class="twelve columns full-bleed">
+          <h2>Article</h2>
+        </article>
+        <article class="twelve columns full-bleed">
+          <h2>Another Article</h2>
+        </article>      
+      </div>
+      <aside class="three columns offset-by-one omega">
+        <h3>Sidebar</h3>
+      </aside>
+    </section>
+  
+    <footer class="sixteen columns">
+      <h3>Footer</h3>
+      <p>This is the footer, where magical things are often overlooked.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>

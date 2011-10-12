@@ -491,6 +491,10 @@ img.scale-with-grid {
 .column.omega, .columns.omega {
   margin-right: 0; }
 
+.column.full-bleed, .columns.full-bleed {
+  margin-left: 0;
+  margin-right: 0; }
+
 /* Base Grid */
 .container .one.column {
   width: 40px; }
@@ -524,6 +528,12 @@ img.scale-with-grid {
   width: 880px; }
 .container .sixteen.columns {
   width: 940px; }
+.container .one.column.full-bleed, .container .two.columns.full-bleed, .container .three.columns.full-bleed, .container .four.columns.full-bleed,
+.container .five.columns.full-bleed, .container .six.columns.full-bleed, .container .seven.columns.full-bleed, .container .eight.columns.full-bleed,
+.container .nine.columns.full-bleed, .container .ten.columns.full-bleed, .container .eleven.columns.full-bleed, .container .twelve.columns.full-bleed,
+.container .thirteen.columns.full-bleed, .container .fourteen.columns.full-bleed, .container .fifteen.columns.full-bleed,
+.container .sixteen.columns.full-bleed {
+  width: 100%; }
 .container .one-third.column {
   width: 300px; }
 .container .two-thirds.column {
@@ -735,8 +745,7 @@ body {
   font: 13px / 18px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
-  -webkit-text-size-adjust: 100%;
-  background-color: red; }
+  -webkit-text-size-adjust: 100%; }
 
 /*	Blockquotes  */
 blockquote {
