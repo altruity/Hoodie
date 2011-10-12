@@ -47,6 +47,12 @@
   margin-right: 0;
 }
 
+.full-bleed {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
 /* Base Grid */
 
 .container {
@@ -82,10 +88,6 @@
     width: 880px; }
   .sixteen.columns {
     width: 940px; }
-  .one.column.full-bleed, .two.columns.full-bleed, .three.columns.full-bleed, .four.columns.full-bleed, 
-  .five.columns.full-bleed, .six.columns.full-bleed, .seven.columns.full-bleed, .eight.columns.full-bleed, 
-  .nine.columns.full-bleed, .ten.columns.full-bleed, .eleven.columns.full-bleed, .twelve.columns.full-bleed, 
-  .thirteen.columns.full-bleed, .fourteen.columns.full-bleed, .fifteen.columns.full-bleed, 
   .sixteen.columns.full-bleed {
     width: 100%; }
   .one-third.column {
