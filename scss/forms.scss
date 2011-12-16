@@ -65,7 +65,7 @@ label {
   color: $grayDark;
 }
 
-// Shift over the inside div to align all label's relevant content
+// Shift over the inside div to align all labels relevant content
 form .input {
   margin-left: 150px;
 }
@@ -144,7 +144,7 @@ textarea {
   cursor: not-allowed;
 }
 
-// Placeholder text gets special styles; can't be bundled together though for some reason
+// Placeholder text gets special styles; cant be bundled together though for some reason
 :-moz-placeholder {
   color: $grayLight;
 }
@@ -170,7 +170,7 @@ input[type=file]:focus,
 input[type=checkbox]:focus,
 select:focus {
   @include box-shadow(none); // override for file inputs
-  outline: 1px dotted #666; // Selet elements don't get box-shadow styles, so instead we do outline
+  outline: 1px dotted #666; // Selet elements dont get box-shadow styles, so instead we do outline
 }
 
 // Error styles
