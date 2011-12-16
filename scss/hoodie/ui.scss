@@ -395,6 +395,86 @@ input[type=submit].btn {
   }
 }
 
+// TABS
+// ----
+
+.tabs, .pills {
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+  zoom: 1;
+  border-bottom: 1px solid #c7c3b1;
+}
+.tabs:before,
+.pills:before,
+.tabs:after,
+.pills:after {
+  display: table;
+  content: "";
+  zoom: 1;
+  *display: inline;
+}
+.tabs:after, .pills:after {
+  clear: both;
+}
+.tabs > li, .pills > li {
+  float: left;
+}
+.tabs > li > a, .pills > li > a {
+  display: block;
+}
+
+.pills a, .pills a:visited {
+  margin: 5px 3px 5px 0;
+  padding: 0 15px;
+  text-shadow: 0 1px 1px #ffffff;
+  line-height: 30px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  font-weight: bold;
+  color: #555;
+}
+.pills a:hover {
+  background: #e1e1e1;
+  background: rgba(0,0,0,0.1);
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  color: $linkColor;
+  border-bottom: none;
+}
+.pills .active a {
+  @include grad-vertical;
+  color: #ffffff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+.tab-content > *, .pill-content > * {
+  display: none;
+}
+.tab-content > .active, .pill-content > .active {
+  display: block;
+}
+
+.pill-content ul{
+  margin: 15px 25px 25px;
+}
+
+.pill-content ul li{
+  list-style-type: none;
+  a, a:visited{
+    background: url(/themes/default/images/plus_red.png) no-repeat 0 0;
+    margin:0 3px 0 0;
+    padding: 0 15px 25px 35px;
+    display: block;
+    color: #666666;
+  }
+  a:hover{
+    color: #222;
+    border-bottom: 1px solid transparent;
+    background: url(/themes/default/images/plus_redhi.png) no-repeat 0 0;
+  }
+}
+
 
 // PATTERN ANIMATIONS
 // ------------------
