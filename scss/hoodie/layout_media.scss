@@ -1,0 +1,46 @@
+// 
+//  ------------------------------
+//  .   .              .          
+//  |   |              |   o      
+//  |---| .-.  .-.  .-.|   .  .-. 
+//  |   |(   )(   )(   |   | (.-' 
+//  '   ' `-'  `-'  `-'`--' `-`--'
+//  ------------------------------
+//   The Comfy HTML/CSS Framework 
+//  ------------------------------
+// 
+//   @author   Craig Waterman / @ckh2oman / craigwaterman.com
+//   @author   Dan Rose / @dblizzy / danroseonline.com
+//   @git      https://github.com/craigwaterman/Hoodie
+//   @license  See LICENSE and ATTRIBUTION
+// 
+//   @file     layout_custom.scss
+//   @info     Custom media queries for your responsive layout.
+//             Derived from Skeleton.
+// 
+
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+	/* Your Styles Here */
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	/* Your Styles Here */
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	/* Your Styles Here */
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	/* Your Styles Here */
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	/* Your Styles Here */
+}

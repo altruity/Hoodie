@@ -24,13 +24,8 @@
 @import "hoodie/variables";      // Named colors and font sizes.
 @import "hoodie/mixins";         // Re-usable bits for borders, gradients and more.
 
-@import "hoodie/layout";         // The responsive 960 grid layout.
 @import "hoodie/layout_grid";    // The responsive 960 grid layout.
-@import "hoodie/layout_custom";  // Your custom grid media queries.
+@import "hoodie/layout_media";  // Your custom grid media queries.
 
-@import "hoodie/styling";        // Styles, Basil, styles.
-
-@import "hoodie/type";           // Typographic considerations. 
+@import "hoodie/defaults";        // Styles, Basil, styles.
 @import "hoodie/forms";          // Form styling
-@import "hoodie/tables";         // Table styling. No, really.
-@import "hoodie/ui";             // UI elements
