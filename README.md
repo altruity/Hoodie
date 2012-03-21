@@ -13,7 +13,7 @@ Unzip Hoodie and see what's inside:
 + Skeleton Grid Boilerplate.
 + Creamy SASS/SCSS goodness.
 
-What are you waiting for?? Checkout http://twitter.github.com/bootstrap!
+What are you waiting for?? Checkout http://craigwaterman.github.com/Hoodie!
 
 
 
