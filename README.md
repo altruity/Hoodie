@@ -1,7 +1,8 @@
 [Hoodie](http://github.com/craigwaterman/Hoodie)
 =================
 
-Hoodie aims to combine the best of the best frameworks into a single package to speed your development. 
+Hoodie aims to combine the best of the best frameworks into a single package to speed your development.
+_It's the zippered hoodie of HTML/CSS frameworks!_
 
 Unzip Hoodie and see what's inside:
 
@@ -20,7 +21,7 @@ What are you waiting for?? Checkout http://craigwaterman.github.com/Hoodie!
 Getting started
 -----------
 
-Clone, `git clone git@github.com:craigwaterman/Hoodie.git`, alternatively [grab the latest](https://github.com/craigwaterman/Hoodie/zipball/master).
+Clone it: `git clone git@github.com:craigwaterman/Hoodie.git`; alternatively: [grab the latest](https://github.com/craigwaterman/Hoodie/zipball/master).
 
 
 
