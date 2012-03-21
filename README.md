@@ -64,7 +64,7 @@ Authors
 Why ANOTHER Framework??
 ---------------------
 
-Over time that we were repeatedly reusing the same awesome frameworks and libraries, copy/pasting until our little programmer fingers bled… 
+Over time we repeatedly reused the same awesome frameworks and libraries, copy/pasting until our little programmer fingers bled… 
 
 …so we took all those pieces and zipped them up into a single package (and bought a box of Band-Aids®).
 
