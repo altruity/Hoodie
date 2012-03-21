@@ -1,8 +1,7 @@
 [Hoodie](http://github.com/craigwaterman/Hoodie)
 =================
 
-Hoodie aims to combine the best of the best frameworks into a single package to speed your development.
-
+Hoodie aims to combine the best of the best frameworks into a single package to speed your development.  
 _It's the zippered hoodie of HTML/CSS frameworks!_
 
 Unzip Hoodie and see what's inside:
